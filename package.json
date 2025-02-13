@@ -1,0 +1,15 @@
+{
+  "name": "otel-exporter-bun-repro",
+  "type": "module",
+  "scripts": {
+    "build": "bun build index.ts --target=bun --sourcemap --outdir=dist",
+    "start": "bun run ./dist/index.js"
+  },
+  "dependencies": {
+    "@opentelemetry/sdk-node": "^0.57.1",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.57.1",
+    "@opentelemetry/resources": "^1.22.0",
+    "@opentelemetry/semantic-conventions": "^1.22.0",
+    "@opentelemetry/sdk-trace-base": "^1.22.0"
+  }
+}
